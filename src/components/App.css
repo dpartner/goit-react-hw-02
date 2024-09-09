@@ -1,0 +1,16 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+body {
+  background-color: peachpuff;
+}
+
+.appWrap {
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 40px;
+}
