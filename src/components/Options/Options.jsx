@@ -1,6 +1,6 @@
 import s from "./Options.module.css";
 
-const Options = ({ update, reset }) => {
+const Options = ({ update, reset, qtyFeedback }) => {
   return (
     <div className={s.optionWrap}>
       <button className={s.optionButton} onClick={() => update("good")}>
@@ -12,9 +12,12 @@ const Options = ({ update, reset }) => {
       <button className={s.optionButton} onClick={() => update("bad")}>
         Bad
       </button>
-      <button className={s.optionButton} onClick={reset}>
-        Reset
-      </button>
+
+      {qtyFeedback > 0 && (
+        <button className={s.optionButton} onClick={reset}>
+          Reset
+        </button>
+      )}
     </div>
   );
 };

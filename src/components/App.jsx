@@ -36,7 +36,11 @@ function App() {
   return (
     <div className="appWrap">
       <Description />
-      <Options update={updateFeedback} reset={resetFeedback} />
+      <Options
+        update={updateFeedback}
+        reset={resetFeedback}
+        qtyFeedback={totalFeedback}
+      />
       {totalFeedback ? (
         <Feedback
           feedback={feedback}
